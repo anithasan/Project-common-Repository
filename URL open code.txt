@@ -1,0 +1,26 @@
+package Peppack;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginCreate {
+	
+		public static void main(String[] args) throws InterruptedException {
+			     // Set the path for the  chrome driver
+		System.setProperty("webdriver.chrome.driver", "C:/Users/nvram/Downloads/chromedriver_win32/chromedriver.exe");
+				// Create a new instance of the new chrome driver
+		WebDriver driver=new ChromeDriver();
+         		// Navigating to URL
+		driver.get("https://www.pepboys.com/");
+                //wait for a certain amount of time before throwing an exception
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+               //Chrome driver object implementing manage method of WebDriver interface and also implementing
+		       //methods of Options and Window class to WebDriver interface				
+		driver.manage().window().maximize();		
+				
+		
+	}
+
+}
