@@ -1,0 +1,22 @@
+Ground Rules 
+
+1 Everybody should submit thier work irrespctive of prograess
+2 Availability of all members for discussion in QA project group in a fixed time.
+3 Upload all files in text format to nvramaraju1805@gmail.com for publish in Project-common-Repository
+4 All other projcet groups can access repositories 
+
+Scope of the Loin Module
+
+1 Navigate Pepboys home page
+
+2 Craete or login page
+
+3 craete a Account section
+
+4 Navigate and submit all Four sections like profile
+										your vehicle
+										your store
+										confirnation	
+5 Application Environment	:windows/java/Ecilipse Ide/Chrome Driver
+
+	
