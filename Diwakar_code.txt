@@ -1,0 +1,42 @@
+package login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Login1 {
+
+	
+		// TODO Auto-generated method stub
+		public static void main(String[] args)throws InterruptedException {
+			
+			System.setProperty("webdriver.chrome.driver","C:/D/chromedriver.exe");
+			
+			WebDriver driver = new ChromeDriver();
+			
+			
+			
+			driver.get("https://www.pepboys.com/");
+			Thread.sleep(3000);
+			System.out.println("Hello Team Tested URL ,Result:Passed");
+			driver.findElement(By.xpath("//a[.='Log In or Create an Account']")).click();
+			System.out.println(" Tested Login button ,Result:Passed");
+			driver.findElement(By.xpath("//*[@id='regboxText']")).click();
+			System.out.println("Tested craete New Account button ,Result:Passed");
+			driver.findElement(By.xpath("//*[@id='existingRewardsMember2']")).click();
+			System.out.println("Tested Radio button with staus YES ,Result:Passed");
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id='existingRewardsMember1']")).click();
+			System.out.println("Testedfirst name feild ,Result:Passed");
+			driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("Diwakar");
+			System.out.println("Tested last name feild ,Result:Passed");
+			driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("Basnet");
+			System.out.println("Tested phone no feild ,Result:Passed");
+			driver.findElement(By.xpath("//input[@id='phoneNumber']")).sendKeys("9178229734");
+			System.out.println("Tested zip code no feild ,Result:Passed");
+			driver.findElement(By.xpath("//input[@id='zipCode']")).sendKeys("68648");
+			
+	}
+		//*[@id='existingRewardsMember1']
+}
+pepboys.txt
